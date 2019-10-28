@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://dta0502.github.io/"/>
-  <updated>2019-10-28T09:10:49.614Z</updated>
+  <updated>2019-10-28T09:12:50.675Z</updated>
   <id>https://dta0502.github.io/</id>
   
   <author>
@@ -21,7 +21,33 @@
     <link href="https://dta0502.github.io/archives/undefined.html"/>
     <id>https://dta0502.github.io/archives/undefined.html</id>
     <published>2019-10-28T17:04:49.000Z</published>
-    <updated>2019-10-28T09:10:49.614Z</updated>
+    <updated>2019-10-28T09:12:50.675Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="What-is-Python-？"><a href="#What-is-Python-？" class="headerlink" title="What is Python ？"></a>What is Python ？</h1><p>python is a language, which is simple and fast to make your algorithm come true. </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;What-is-Python-？&quot;&gt;&lt;a href=&quot;#What-is-Python-？&quot; class=&quot;headerlink&quot; title=&quot;What is Python ？&quot;&gt;&lt;/a&gt;What is Python ？&lt;/h1&gt;&lt;p&gt;python is a la
+      
+    
+    </summary>
+    
+    
+      <category term="programming" scheme="https://dta0502.github.io/categories/programming/"/>
+    
+    
+      <category term="python" scheme="https://dta0502.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>笑笑生python讲堂(一)：why python?</title>
+    <link href="https://dta0502.github.io/archives/undefined.html"/>
+    <id>https://dta0502.github.io/archives/undefined.html</id>
+    <published>2019-10-28T17:04:49.000Z</published>
+    <updated>2019-10-28T09:12:32.456Z</updated>
     
     <content type="html"><![CDATA[<h1 id="What-is-Python-？"><a href="#What-is-Python-？" class="headerlink" title="What is Python ？"></a>What is Python ？</h1><p>python is a language, which is simple and fast to make your algorithm come true. </p>]]></content>
     
