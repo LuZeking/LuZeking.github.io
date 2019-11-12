@@ -516,8 +516,114 @@
       
         
           
-            <h1 id="What-is-Python-？"><a href="#What-is-Python-？" class="headerlink" title="What is Python ？"></a>What is Python ？</h1><p>python is a language, which is simple and fast to make your algorithm come true. </p>
+            <h1 id="一，why-this-tutorial"><a href="#一，why-this-tutorial" class="headerlink" title="一，why this tutorial?"></a>一，why this tutorial?</h1><p>市面上的python教程很多，为什么还要写这个教程？</p>
+<blockquote>
+<p>市面上大多的教程基本只是一个说明文档，而最好的说明文档自然是python官方教程，二手的解读教程虽然能让你了解常用的函数方法，却难免有所疏漏，这导致后面编程时有许多坑要填，长远来看反而不如系统的学习官方文档透彻省时省力。</p>
+</blockquote>
+<p><strong>所以这套教程又能做什么呢？</strong></p>
+<ol>
+<li>本教程着眼于python的思想理解而不是泛泛的用法罗列，但会给出一些常见用法并提供一些相关方法的参考连接。</li>
+<li>结合一定的数据结构知识，为以后的算法学习铺路。</li>
+<li>每节课后都尽量有一道案例，数道习题，举一隅而不以三隅反则不复也。</li>
+<li>本教程不断更新，力求不断完善，如有建议或不对之处望指出。</li>
+</ol>
+<h1 id="二，What-is-Python-？"><a href="#二，What-is-Python-？" class="headerlink" title="二，What is Python ？"></a>二，What is Python ？</h1><p>python is a language, which is simple and fast to make your algorithm come true. </p>
+<blockquote>
+<p>python是一门语言，是一门和机器沟通的语言</p>
+</blockquote>
+<p>是语言自然就包括语法，词汇，需要听说读写的练习。</p>
+<h2 id="1，语法："><a href="#1，语法：" class="headerlink" title="1，语法："></a>1，语法：</h2><p>​        没有时态，没疑问句等句法，基础的都是祈使句 :动宾结构（主语省略）</p>
+<blockquote>
+<p>如：让小王去打开门: wang ，open the door</p>
+</blockquote>
+<p>​        类比到python中，就可以定义一个函数实现这个功能，函数就是一些代码以一定的形式组织起来的，完成相应的功能的方法。</p>
+<blockquote>
+<p>如定义 让小王去打开xx 为一个函数，这个函数完成指定让小王去打开某物，在python体现为 def wang_open():</p>
+</blockquote>
+<p>​        def是定义函数的引导词，wang_open是你给函数起的个性化函数名</p>
+<p>​    而 门 这个宾语对象如何让函数获取呢?</p>
+<blockquote>
+<p>def wang_open(door):，在括号中给予参数即可，如果你想让小王打开窗户，将door替换成window即可，def wang_open(door):</p>
+</blockquote>
+<p>​    所以最后一个完整函数的实现方法就是        </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wang_open</span><span class="params">(door)</span>:</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
 
+<p>​        pass即跳过具体的内容，应定义具体打开某物的方法，并将某物指定为获取的参数door，具体内容如何定义之后会讲。</p>
+<p>​        </p>
+<p><strong>观察上面的函数你可能已经发现:    python的函数结构并不是靠；，{}等来界定，而是靠缩进</strong></p>
+<h2 id="2，词汇：26个保留字-如控制条件的保留字if，else"><a href="#2，词汇：26个保留字-如控制条件的保留字if，else" class="headerlink" title="2，词汇：26个保留字, 如控制条件的保留字if，else"></a>2，词汇：26个保留字, 如控制条件的保留字if，else</h2><p>读写掌握语法词汇集能读，多练习即可写</p>
+<h2 id="3-你的第一个python程序"><a href="#3-你的第一个python程序" class="headerlink" title="3,你的第一个python程序"></a>3,你的第一个python程序</h2><p>python 有60多个内置函数，内置函数就如wang_open一样，可以完成一定功能的方法，区别是内置函数python 已经帮你定义好了，不用你再自己定义了</p>
+<p>如 print() 函数，实现打印某字符串的功能，括号内输入想要打印的字符</p>
+<p>打开你的python编译器，输入下面的第一行，点击enter键运行</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"hello python!"</span>)</span><br><span class="line">输出如下：</span><br><span class="line">&gt;&gt; hello python!</span><br></pre></td></tr></table></figure>
+
+<p>如果正确，那么恭喜你，你已经迈出了python学习的一大步，后面的学习不过是换个函数马甲，换个函数组织形式罢了，本质上都是”让小王去打开门“。</p>
+<h1 id="例题示范"><a href="#例题示范" class="headerlink" title="例题示范"></a>例题示范</h1><blockquote>
+<p>if 是python的保留字之一，它控制条件语句，也就是满足if后面的条件，之后的函数程序才执行。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">在python编译器中输入如下：</span><br><span class="line"><span class="keyword">if</span> <span class="literal">True</span>:</span><br><span class="line">    print(<span class="string">"hello python!"</span>)</span><br><span class="line">    </span><br><span class="line">输出如下：</span><br><span class="line">&gt;&gt; hello python!</span><br></pre></td></tr></table></figure>
+
+<p>其中 True是python的保留字，如果数据不为空或0则为True，if True的话默认正确, False与之相反。</p>
+<blockquote>
+<p>else是python的保留字之一，它控制条件语句，需要和if成套使用，当不满足if后面的条件，之后的函数程序才执行。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">在程序中如下输入</span><br><span class="line">flag = <span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span> flag:</span><br><span class="line">    print(<span class="string">"hello python!"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"i will never come back, python!"</span>)</span><br><span class="line">    	</span><br><span class="line">输出如下：</span><br><span class="line">&gt;&gt; i will never come back, python!</span><br></pre></td></tr></table></figure>
+
+<p>flag = False是pthon中对象的赋值方法，之后会详细讲解。</p>
+<h1 id="思考测试题"><a href="#思考测试题" class="headerlink" title="思考测试题"></a>思考测试题</h1><p>请用python完成如下共功能</p>
+<blockquote>
+<p>如果flag =True 输出 “you win”， flag = False 输出 “you lose”。</p>
+</blockquote>
+<p><strong>做完题再对答案哦，本次答案可关注微信公众”岳麓笑笑生”后，恢复 winorlose 获得，更多答案与学习资料详见公众号。</strong></p>
+<h1 id="之后教学大纲"><a href="#之后教学大纲" class="headerlink" title="之后教学大纲"></a>之后教学大纲</h1><ol>
+<li><p>python数据类型</p>
+</li>
+<li><p>函数构造</p>
+</li>
+<li><p>条件控制语句</p>
+</li>
+<li><p>循环控制语句</p>
+</li>
+<li><p>类的构造</p>
+</li>
+<li><p>再谈一切皆对象思想</p>
+</li>
+<li><p>python保留字</p>
+</li>
+<li><p>python内置函数</p>
+</li>
+<li><p>文件管理</p>
+</li>
+<li><p>必备模块os与sys</p>
+</li>
+</ol>
+<pre><code>## python进阶
+
+1. python表达式
+
+2. 其他常用模块
+
+3. 装饰器
+
+4. python数据处理之pandas
+
+5. python数据处理之xml,json
+
+6. python绘图
+
+   ## python特定领域应用
+
+   python 机器学习入门
+
+   python 深度学习入门
+
+   python 网络爬虫入门
+
+   python SQL入门
+
+   python 金融领域应用
+
+   python 网站后端搭建</code></pre>
           
         
       
